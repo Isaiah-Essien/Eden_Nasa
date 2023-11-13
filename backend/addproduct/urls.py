@@ -6,5 +6,4 @@ urlpatterns = [
     path('products/', ProductDetailView.as_view(), name='product-detail'),
     path('update/<int:product_id>/', update_product, name='update_product'),
     path('delete/update/<int:product_id>/', delete_product, name='delete_product'),
-    # Add other URLs as needed
 ]
