@@ -1,0 +1,70 @@
+.services {
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.Services-box {
+    width: 60%;
+    margin-left: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem gray;
+}
+
+.Services-box .Services-layer {
+    text-align: center;
+    padding-left: .5rem;
+    padding: 2px;
+}
+
+.Services-layer p {
+    font-size: 1rem;
+    margin: .5rem 0;
+    padding: 2px;
+}
+
+.First p {
+    padding-top: -2rem;
+}
+
+.First h3 {
+    font-size: 2rem;
+    margin-right: 50%;
+}
+
+.First .heading {
+    font-size: 1rem;
+}
+
+.Services-box img {
+    width: 100%;
+    gap: 4rem;
+    height: 200px;
+}
+
+.services-layer h4 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.vi {
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1rem;
+    background: #3A8E3A;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem #3A8E3A;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    text-decoration: none;
+    align-self: center;
+}
+
+.btn:hover {
+    box-shadow: 2rem;
+}
