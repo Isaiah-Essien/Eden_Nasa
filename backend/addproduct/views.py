@@ -17,6 +17,8 @@ class ProductDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     permission_classes = [IsAuthenticated]
+    lookup_field = 'pk'  
+
 
 @api_view(['PUT'])
 @permission_classes([permissions.IsAuthenticated])
