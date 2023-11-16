@@ -10,14 +10,5 @@ Django: pip install django
 Rest framework api: pip install djangorestframework
 corsheaders: pip install django-cors-headers
 
-## For admin: Only super users will be able to access the super admin:
-python manage.py createsuperuser
-
-## To access the API endpoint:
-admin: http://127.0.0.1:8000/admin/
-Login: http://127.0.0.1:8000/api/auth/login/
-Register: http://127.0.0.1:8000/api/auth/register/
-To see all the registered users: http://127.0.0.1:8000/api/auth/get_registered_users/
-To get all products and create new ones: http://127.0.0.1:8000/api/products/
 
 
