@@ -1,6 +1,7 @@
-.services {
+.Services {
     display: flex;
     font-size: 1.1rem;
+    justify-content: space-around;
 }
 
 .Services-box {
@@ -8,6 +9,7 @@
     margin-left: 10px;
     border-radius: 1rem;
     box-shadow: 0 0 1rem gray;
+    justify-content: space-around;
 }
 
 .Services-box .Services-layer {
@@ -28,7 +30,6 @@
 
 .First h3 {
     font-size: 2rem;
-    margin-right: 50%;
 }
 
 .First .heading {
@@ -68,3 +69,27 @@
 .btn:hover {
     box-shadow: 2rem;
 }
+
+@media (max-width: 767px) {
+    .Services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+        .Services-box{
+            width: 100%;
+        }
+    
+    .Services {
+        margin: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        width: 100%;
+        }
+
+    .First {
+        width: 100%;
+        text-align: center;
+    }
+    }
