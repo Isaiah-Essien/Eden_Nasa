@@ -1,95 +1,82 @@
+/* style.css */
+
 .Services {
     display: flex;
-    font-size: 1.1rem;
+    flex-wrap: nowrap;
     justify-content: space-around;
+    box-shadow: 0rem 1rem 1rem whitesmoke;
 }
 
-.Services-box {
-    width: 60%;
-    margin-left: 10px;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem gray;
-    justify-content: space-around;
-}
-
-.Services-box .Services-layer {
+.Service {
+    margin: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
-    padding-left: .5rem;
-    padding: 2px;
+    background: rgba(236, 241, 236, 0.3);
+    border-radius: 1rem;
 }
 
-.Services-layer p {
-    font-size: 1rem;
-    margin: .5rem 0;
-    padding: 2px;
+.Service1 {
+    margin: 10px;
+    text-align: center;
 }
 
-.First p {
-    padding-top: -2rem;
+.Service1 h2 {
+    color: #3A8E3A;
 }
 
-.First h3 {
-    font-size: 2rem;
-}
-
-.First .heading {
-    font-size: 1rem;
-}
-
-.Services-box img {
-    width: 100%;
-    gap: 4rem;
+.Service img {
     height: 200px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 1rem 1rem 0 0;
 }
 
-.services-layer h4 {
-    padding-right: 1rem;
-    padding-left: 1rem;
+.Service p {
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 10px;
 }
 
-.vi {
-    padding: 20px;
+.Service h4 {
+    color: black;
+    text-align: center;
 }
 
 .btn {
-    display: inline-block;
-    padding: 1rem 1rem;
-    background: #3A8E3A;
-    border-radius: .5rem;
-    box-shadow: 0 0 1rem #3A8E3A;
-    font-size: 1.6rem;
+    padding: 10px 20px;
+    background-color: #3A8E3A;
     color: white;
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .5s ease;
-    text-decoration: none;
-    align-self: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .btn:hover {
-    box-shadow: 2rem;
+    background-color: #6daa6d;
 }
 
+/*.title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    border-color: #3A8E3A;
+}*/
+
 @media (max-width: 767px) {
-    .Services {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        }
-
-        .Services-box{
-            width: 100%;
-        }
-    
-    .Services {
-        margin: 10px;
-        padding-bottom: 10px;
-        text-align: center;
-        width: 100%;
-        }
-
-    .First {
-        width: 100%;
-        text-align: center;
+.Services  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     }
+
+.Service {
+    margin: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
     }
+}
