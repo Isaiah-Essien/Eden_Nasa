@@ -1,58 +1,138 @@
-body {
-    font-family: 'roboto';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
 }
-.about {
+
+body {
+    
+}
+.about-content {
     display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    gap: 6%;
+    padding: 15px;
+    justify-self: center;
+    align-content: center;
     justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background: var(--second-bg-color);
-    align-items: start;
+}
+
+
+.about-img {
+    width: 450px;
+    height: 295px;
+    border-radius: 20px
 }
 
 .about-img img {
-    width: 35vw;
-    height: 350px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px
+    
+}
+
+.about-text {
+    width: 360px;
+}
+.about-text h1 {
+    font-size: 18px;
+    color: green;
+}
+.about-text h2 {
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.about-text h3 {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+    color: green;
+}
+
+.about-text p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.btn {
+    text-decoration: none;
+    padding: 15px;
+    background-color: green;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+@media (max-width: 936px) {
+    .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2%;
+        
+        text-align: start;
+        justify-self: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .about-text {
+        width: 450px;
+    }
+    .about-text h1 {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .about-img {
+        height: 250px;
+    }
+}
+@media (max-width: 380px) {
+    .about-img {
+        height: 200px;
+    }
+}
+
+
+/*.about-img img {
+    width: 100%;
     margin-right: 50%;
-    margin-left: 20%;
     border-radius: 1rem;
-    border: .2rem;
+    box-shadow: 0 0 1rem gray;
+    border: .2rem solid var(--main-color);
 }
 
 .heading {
-    margin-left: 15%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #3A8E3A;
 }
 
 
-.Code {
-    width: 40%;
-    margin-left: 15%;
-    font-family: 'roboto';
-}
-.Code h3 {
+.about-content h3 {
     color: #3A8E3A;
-    font-family: Arial, Helvetica, sans-serif;
 }
-
 .about-content p {
-    font-size: 1.1rem;
-    margin: 1rem 0 ;
-    margin-left: 15%;
-    margin-right: 20%;
+    font-size: 1rem;
+    margin: 3rem;
+    margin-right: 50%;
+    margin-left: -1rem;
 }
+
+
 
 .btn {
     display: inline-block;
-    padding: 1rem 1rem;
+    padding: .5rem .5rem;
     background: #3A8E3A;
     border-radius: .5rem;
     box-shadow: 0 0 1rem #3A8E3A;
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: white;
     letter-spacing: .1rem;
     font-weight: 600;
+    margin-top: -2rem;
     margin-left: 15%;
     transition: .5s ease;
     text-decoration: none;
@@ -60,3 +140,25 @@ body {
 .btn:hover {
     box-shadow: 2rem;
 }
+
+@media (max-width: 768px) {
+    .about {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    }
+
+    .about-content p {
+    font-size: 1.5rem;
+    margin: 3rem;
+    margin-right: 0%;
+    margin-left: 1rem;
+    }
+
+    .about img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+*/

@@ -1,95 +1,137 @@
+/* style.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 .Services {
     display: flex;
-    font-size: 1.1rem;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    gap: %;
 }
 
-.Services-box {
-    width: 60%;
-    margin-left: 10px;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem gray;
-    justify-content: space-around;
-}
+.Service {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+    width: 300px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.151);
+    padding-bottom: 10px;
+    margin: 10px;
+    gap: 2%;
 
-.Services-box .Services-layer {
+}
+.Service h4 {
     text-align: center;
-    padding-left: .5rem;
-    padding: 2px;
+    padding-top: 10px;
 }
 
-.Services-layer p {
-    font-size: 1rem;
-    margin: .5rem 0;
-    padding: 2px;
-}
-
-.First p {
-    padding-top: -2rem;
-}
-
-.First h3 {
-    font-size: 2rem;
-}
-
-.First .heading {
-    font-size: 1rem;
-}
-
-.Services-box img {
+.img-cont {
+    width: 300px;
+} 
+.img-cont img {
     width: 100%;
-    gap: 4rem;
-    height: 200px;
-}
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+} 
 
-.services-layer h4 {
-    padding-right: 1rem;
-    padding-left: 1rem;
+.Service1 {
+    width: 315px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
-
-.vi {
-    padding: 20px;
+.Service1 p {
+    margin-bottom: 20px;
+}
+.Service p {
+    padding: 15px;
+    text-align: center;
 }
 
 .btn {
-    display: inline-block;
-    padding: 1rem 1rem;
-    background: #3A8E3A;
-    border-radius: .5rem;
-    box-shadow: 0 0 1rem #3A8E3A;
-    font-size: 1.6rem;
-    color: white;
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .5s ease;
     text-decoration: none;
-    align-self: center;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-.btn:hover {
-    box-shadow: 2rem;
+/*.Services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0rem 1rem 1rem whitesmoke;
 }
+
+.Service {
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border-radius: 1rem;
+    width: 320px;
+}
+
+.Service1 {
+    margin: 10px;
+    text-align: start;
+    width: 20%;
+}
+
+.Service1 h2 {
+    color: #3A8E3A;
+}
+
+.Service img {
+    height: 200px;
+    width: 100%;
+    display: block;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.Service p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    padding: 5px;
+    margin: 0px;
+}
+
+.Service h4 {
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+/*.title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    border-color: #3A8E3A;
+}*/
 
 @media (max-width: 767px) {
-    .Services {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        }
 
-        .Services-box{
-            width: 100%;
-        }
+.Service1 {
+    padding-bottom: 20px;
+    text-align: center;
     
-    .Services {
-        margin: 10px;
-        padding-bottom: 10px;
-        text-align: center;
-        width: 100%;
-        }
-
-    .First {
-        width: 100%;
-        text-align: center;
     }
-    }
+}
