@@ -1,24 +1,86 @@
 /* style.css */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 .Services {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    gap: %;
+}
+
+.Service {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+    width: 300px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.151);
+    padding-bottom: 10px;
+    margin: 10px;
+    gap: 2%;
+
+}
+.Service h4 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.img-cont {
+    width: 300px;
+} 
+.img-cont img {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+} 
+
+.Service1 {
+    width: 315px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.Service1 p {
+    margin-bottom: 20px;
+}
+.Service p {
+    padding: 15px;
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*.Services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     box-shadow: 0rem 1rem 1rem whitesmoke;
 }
 
 .Service {
-    margin: 10px;
     padding-bottom: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
-    background: rgba(236, 241, 236, 0.3);
+    background: rgb(255, 255, 255);
     border-radius: 1rem;
+    width: 320px;
 }
 
 .Service1 {
     margin: 10px;
-    text-align: center;
+    text-align: start;
+    width: 20%;
 }
 
 .Service1 h2 {
@@ -28,35 +90,34 @@
 .Service img {
     height: 200px;
     width: 100%;
-    height: auto;
     display: block;
-    margin-bottom: 10px;
     border-radius: 1rem 1rem 0 0;
 }
 
 .Service p {
-    font-size: 14px;
-    line-height: 1;
-    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    padding: 5px;
+    margin: 0px;
 }
 
 .Service h4 {
     color: black;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .btn {
-    padding: 10px 20px;
-    background-color: #3A8E3A;
+    text-decoration: none;
+    padding: 15px;
+    background-color: green;
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-.btn:hover {
-    background-color: #6daa6d;
-}
+
 
 /*.title {
     text-align: center;
@@ -67,16 +128,10 @@
 }*/
 
 @media (max-width: 767px) {
-.Services  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    }
 
-.Service {
-    margin: 10px;
-    padding-bottom: 10px;
+.Service1 {
+    padding-bottom: 20px;
     text-align: center;
-    width: 100%;
+    
     }
 }
