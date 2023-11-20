@@ -5,8 +5,9 @@
     font-family: sans-serif
 }
 
-body {
-    
+#about {
+    padding-top: 100px;
+    min-height: 100vh;
 }
 .about-content {
     display: flex;
@@ -22,7 +23,7 @@ body {
 
 .about-img {
     width: 450px;
-    height: 295px;
+    height: 350px;
     border-radius: 20px
 }
 
@@ -34,11 +35,13 @@ body {
 }
 
 .about-text {
-    width: 360px;
+    width: 450px;
 }
 .about-text h1 {
     font-size: 18px;
     color: green;
+    font-weight: bold;
+    padding-top: 10px;
 }
 .about-text h2 {
     font-size: 25px;
@@ -54,13 +57,14 @@ body {
 
 .about-text p {
     font-size: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    width: 90%;
 }
 .btn {
     text-decoration: none;
-    padding: 15px;
+    padding: 1px;
     background-color: green;
-    width: 100px;
+    width: px;
     color: white;
     border-radius: 5px;
     font-weight: bold;
@@ -75,6 +79,9 @@ body {
         justify-self: center;
         align-content: center;
         justify-content: center;
+    }
+    .about-text h2 {
+        padding-top: 15px;
     }
     .about-text {
         width: 450px;
@@ -95,70 +102,3 @@ body {
     }
 }
 
-
-/*.about-img img {
-    width: 100%;
-    margin-right: 50%;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem gray;
-    border: .2rem solid var(--main-color);
-}
-
-.heading {
-    font-size: 1rem;
-    color: #3A8E3A;
-}
-
-
-.about-content h3 {
-    color: #3A8E3A;
-}
-.about-content p {
-    font-size: 1rem;
-    margin: 3rem;
-    margin-right: 50%;
-    margin-left: -1rem;
-}
-
-
-
-.btn {
-    display: inline-block;
-    padding: .5rem .5rem;
-    background: #3A8E3A;
-    border-radius: .5rem;
-    box-shadow: 0 0 1rem #3A8E3A;
-    font-size: 1rem;
-    color: white;
-    letter-spacing: .1rem;
-    font-weight: 600;
-    margin-top: -2rem;
-    margin-left: 15%;
-    transition: .5s ease;
-    text-decoration: none;
-}
-.btn:hover {
-    box-shadow: 2rem;
-}
-
-@media (max-width: 768px) {
-    .about {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-    }
-
-    .about-content p {
-    font-size: 1.5rem;
-    margin: 3rem;
-    margin-right: 0%;
-    margin-left: 1rem;
-    }
-
-    .about img {
-        width: 100%;
-        margin-top: 2rem;
-    }
-}
-*/
