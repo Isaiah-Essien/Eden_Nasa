@@ -6,7 +6,7 @@ body {
 }
 
 footer {
-    background-color: #3F653E;
+    background-color: #3a6338;
     color: white;
     padding: 30px;
     height: 100%;
@@ -30,6 +30,7 @@ footer {
     padding: 0;
     margin: 0;
     line-height: 25px;
+    text-align: center;
 }
 
 li a {
@@ -101,6 +102,28 @@ button {
     height: 50px;
     background-color: rgb(9, 189, 9);
 }
+.socials {
+    text-align: center
+}
+
+.social-links  {
+    display: flex;
+    gap: 10%;
+    font-size: 30px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+
+}
+
+footer div:last-child {
+    text-align: center;
+    margin-top: 10px;
+}
+footer div:nth-child(2) {
+    text-align: center;
+    margin-top: 10px;
+}
 
 /* Remove commented-out form styles
 form {
@@ -135,13 +158,8 @@ form button {
     h1 {
         font-size: 20px;
     }
-
-    .Newsletter {
-        
-        width: 60%;
-    }
-    
 }
+
 
 @media screen and (max-width: 500px) {
     footer {
