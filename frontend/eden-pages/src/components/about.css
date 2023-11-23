@@ -61,12 +61,12 @@
 }
 .btn {
     text-decoration: none;
-    padding: 1px;
     background-color: green;
     width: px;
     color: white;
     border-radius: 5px;
     font-weight: bold;
+    margin-left: 0;
 }
 
 @media (max-width: 1025px) {
