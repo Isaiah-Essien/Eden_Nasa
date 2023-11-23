@@ -8,6 +8,7 @@ import Banner from "./components/Banner.js"
 import About from "./components/About";
 import Services from "./components/Services"
 import Blogs from "./components/Blogs"
+
 function App() {
   return (
   <div>

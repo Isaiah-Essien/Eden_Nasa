@@ -29,6 +29,7 @@ function Navibar() {
                     <Offcanvas.Body>
                       <Nav className="justify-content-end flex-grow-1 pe-3" id='menu'>
                         <Nav.Link href="#action1">About</Nav.Link>
+                        <Nav.Link href="#action2">MarketPlace</Nav.Link>
                         <NavDropdown
                           title="Ressources"
                           id={`offcanvasNavbarDropdown-expand-${expand}`}

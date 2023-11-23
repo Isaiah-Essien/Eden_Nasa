@@ -1,10 +1,11 @@
 import "./service.css"
+import video1 from "../assets/video1.mp4";
+
 function Services() {
   return (
     <div className="Servs">
      <section>
-      <div class="Services">
-      <div class="Service1">
+     <div class="Service1">
         <h2>Services</h2>
         <h3>Eden Solutions Services</h3>
         <p>
@@ -15,6 +16,11 @@ function Services() {
         </p>
         <a class="btn">Contact Us</a>
       </div>
+      <div class="Services">
+      <video autoPlay muted loop>
+  <source src={video1} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
       <div class="Service">
         <div class="img-cont">
         <img src="/food1.png" alt="food" />
