@@ -1,0 +1,250 @@
+
+/* Container for the entire weather app */
+.container {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 12px;
+    background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+}
+
+/* Top bar for search input and search icon */
+.top-bar {
+    display: flex;
+    justify-content: start;
+    padding-top: 35px;
+    gap: 14px;
+    padding-left: 20px;
+}
+
+/* Search input field */
+.top-bar input {
+    display: flex;
+    width: 372px;
+    height: 50px;
+    border: none;
+    background: #ebfffc;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Search icon */
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #ebfffc;
+    border-radius: 5px;
+}
+
+/* Weather image container */
+.Weather-img {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    gap: 50px;
+}
+
+/* Weather temperature display */
+.Weather-temp {
+    display: flex;
+    justify-content: end; font-size: 120px;
+    color: white;
+    margin-top: 50px;
+    opacity: .9;
+}
+
+/* Weather location display */
+.Weather-loc {
+    display: flex;
+    justify-content: start;
+    color: white;
+    font-size: 80px;
+    font-weight: 400;
+    align-items: center;
+    align-self: center;
+}
+
+/* Temperature container */
+.temp {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.temp-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.Data-cont {
+    display: flex;
+    justify-content: end;
+    gap: 100px;
+    margin-right: 10px;
+    align-items: baseline;
+
+}
+.data {
+    color: white;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.humidity-percent {
+    font-size: 20px;
+}
+.wind-rate {
+    font-size: 20px;
+}
+.text {
+    font-size: 20px;
+}
+.text {
+    font-size: 15px;
+}
+
+.element {
+    display: flex;
+    gap: 3px;
+}
+.icon  {
+    height: 40px;
+    margin-top: 8px;
+}
+.weati {
+    width: 300px;
+}
+@media screen and (max-width: 1201px) {
+    .Weather-loc {
+        display: flex;
+        justify-content: start;
+        color: white;
+        font-size: 70px;
+        font-weight: 400;
+        align-items: center;
+        align-self: center;
+    }
+    .temp {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+    .Weather-img {
+        display: flex;
+        justify-content: end;
+        margin-right: 0px;
+        gap: 50px;
+    }
+    .Weather-temp {
+        display: flex;
+        justify-content: end; font-size: 100px;
+        color: white;
+        margin-top: 50px;
+        align-items: center;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .temp {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .Weather-loc {
+        display: flex;
+        justify-content: end;
+        color: white;
+        font-size: 80px;
+        font-weight: 400;
+        align-items: center;
+        align-self: center;
+    }
+    .Weather-img {
+        justify-content: end;
+        margin-right: 0px;
+        font-size: 80px;
+        gap: 100px;
+    }
+    .Weather-img img {
+        font-size: 200px;
+    }
+    .top-bar {
+        display: flex;
+        justify-content: start;
+        padding-top: 20px;
+        gap: 14px;
+        padding-left: 20px;
+    }
+    .Weather-temp {
+        font-size: 80px;
+    }
+    .container {
+        width: 100%;
+        height: 500px;
+        margin: auto;
+        margin-top: 75px;
+        border-radius: 12px;
+        background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Weather-temp {
+        font-size: 100px;
+    }
+    .Weather-img {
+        justify-content: center;
+        margin-right: 0px;
+        font-size: 80px;
+        gap: 0px;
+    }
+    .Weather-temp {
+        font-size: 90px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Weather-loc {
+        justify-content: end;
+        font-size: 50px;
+    }
+
+    .Weather-img img {
+        width: 180px;
+        height: 180px;
+    }
+    .Weather-img {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+        gap: 0px;
+        align-items: center;
+    }
+    .Weather-temp {
+        margin-top: 0px;
+        font-size: 70px;
+    }
+    .temp {
+        justify-content: center;
+    }
+    .Data-cont {
+        justify-content: center;
+        gap: 50px;
+
+    }
+    .container {
+        margin-top: 50px;
+    }
+    .top-bar {
+        padding-left: 5px;
+    }
+}

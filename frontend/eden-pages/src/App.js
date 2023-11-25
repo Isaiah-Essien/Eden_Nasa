@@ -8,16 +8,13 @@ import Banner from "./components/Banner.js"
 import About from "./components/About";
 import Services from "./components/Services"
 import Blogs from "./components/Blogs"
+import Weather from "./components/Weather.js";
+import Weather2 from "./components/ReactWeather.js";
 
 function App() {
   return (
   <div>
-   <Navibar/>
-   <Banner/>
-   <About/>
-   <Services/>
-   <Blogs/>
-   <Footer/>
+   <Weather/>
   </div>
   );
 }
