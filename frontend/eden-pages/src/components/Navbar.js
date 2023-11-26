@@ -5,6 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import AboutPage from './AboutPage/AboutPage';
+import { Link } from 'react-router-dom';
 function Navibar() {
   return (
     <div className={`navigation`}>
@@ -28,7 +30,7 @@ function Navibar() {
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                       <Nav className="justify-content-end flex-grow-1 pe-3" id='menu'>
-                        <Nav.Link href="#action1">About</Nav.Link>
+                      <Link to="./AboutPage/AboutPage.js" className="nav-link">About</Link>
                         <Nav.Link href="#action2">MarketPlace</Nav.Link>
                         <NavDropdown
                           title="Ressources"

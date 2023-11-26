@@ -4,21 +4,23 @@ import './App.css';
 import Navibar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer";
-import Banner from "./components/Banner.js"
-import About from "./components/About";
-import Services from "./components/Services"
-import Blogs from "./components/Blogs"
+import Banner from "./components/HomePage/Banner.js"
+import About from "./components/HomePage/About";
+import Services from "./components/HomePage/Services.js"
+import Blogs from "./components//HomePage/Blogs.js"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AboutPage from "./components/AboutPage/AboutPage.js";
 
 function App() {
   return (
+    <Router>
   <div>
-   <Navibar/>
-   <Banner/>
-   <About/>
-   <Services/>
-   <Blogs/>
-   <Footer/>
+   <AboutPage/>
+   <Routes>
+          <Route path="./AboutPage/AboutPage.js" component={AboutPage} />
+        </Routes>
   </div>
+  </Router>
   );
 }
 
