@@ -4,10 +4,6 @@
     box-sizing: border-box;
     font-family: sans-serif
 }
-
-body {
-    
-}
 .about-content {
     display: flex;
     flex-wrap: wrap;
@@ -86,6 +82,12 @@ body {
 @media (max-width: 470px) {
     .about-img {
         height: 250px;
+    }
+}
+
+@media (max-width: 380px) {
+    .about-img {
+        height: 200px;
     }
 }
 
