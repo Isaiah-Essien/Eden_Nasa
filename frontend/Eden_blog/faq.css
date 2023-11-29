@@ -46,7 +46,7 @@ h2 {
 }
 
 .question {
-    color: blue;
+    color: green;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,6 +56,9 @@ h2 {
 .toggle {
     font-size: 1.5em;
     margin-right: 10px;
+}
+.tile img {
+    color: rgb(34, 112, 34);
 }
 
 .answer {
