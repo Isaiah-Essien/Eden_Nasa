@@ -15,7 +15,7 @@ function Navibar() {
             expand === 'lg' ? (
               <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
                 <Container fluid>
-                  <Navbar.Brand href="#" className='logo'><span>E</span>DEN</Navbar.Brand>
+                  <Link to ="/HomePage" className='logo'><span>E</span>DEN</Link>
                   <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                   <Navbar.Offcanvas
                     id={`offcanvasNavbar-expand-${expand}`}
@@ -29,20 +29,20 @@ function Navibar() {
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                       <Nav className="justify-content-end flex-grow-1 pe-3" id='menu'>
-                      <Link to="./AboutPage/AboutPage.js" className="nav-link">About</Link>
+                      <Link to="/AboutPage" className="nav-link">About</Link>
                         <Nav.Link href="#action2">MarketPlace</Nav.Link>
                         <NavDropdown
                           title="Ressources"
                           id={`offcanvasNavbarDropdown-expand-${expand}`}
                         className='dropmenu'>
-                          <NavDropdown.Item href="#action3" className='menuitem'>Blog</NavDropdown.Item>
+                          <Link to ="/" className='menuitem'>Blog</Link>
                           <NavDropdown.Divider />
                           <NavDropdown.Item href="#action4" className='menuitem'>Forum</NavDropdown.Item>
                           <NavDropdown.Divider />
                           <NavDropdown.Item href="#action5" className='menuitem'>Market Insights</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#action2">Contact Us</Nav.Link>
-                        <Nav.Link href="#action2">FAQ</Nav.Link>
+                        <Link to="/FaqPage" className="nav-link">FAQ</Link>
                       </Nav>
                         <Button variant="link" className='login'>Login</Button>
                     </Offcanvas.Body>

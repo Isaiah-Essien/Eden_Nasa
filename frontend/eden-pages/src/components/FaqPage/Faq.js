@@ -1,13 +1,17 @@
 import React from 'react';
 import faq from '../../assets/faq_g.png';
-import './faq.css'
-const Faq = () => {
-  function toggleAnswer(element) {
-    const answer = element.nextElementSibling;
+import './faq.css';
 
-    answer.classList.toggle('active');
-    element.querySelector('.toggle').textContent = answer.classList.contains('active') ? '-' : '+';
-  }
+const Faq = () => {
+  const toggleAnswer = (event) => {
+    const answer = event.target.parentElement.nextElementSibling;
+
+    if (answer) {
+      answer.classList.toggle('active');
+      const toggleIcon = event.target;
+      toggleIcon.textContent = answer.classList.contains('active') ? '-' : '+';
+    }
+  };
 
   return (
     <div>
@@ -15,17 +19,17 @@ const Faq = () => {
         <h2>Frequently Asked Questions</h2>
 
         <div className="faq-tiles">
-          <div className="tile">
+          <div className="ftile">
             <p className="tile_text">Have a question? Here you will find the answers to questions most valued by our clients and partners, with access to step-by-step instructions and support</p>
           </div>
 
-          <div className="tile">
+          <div className="ftile">
             <img src={faq} alt="FAQ_img" />
           </div>
         </div>
 
-        <div className="faq-item">
-          <div className="question" onClick={() => toggleAnswer(this)}>
+        <div className="faq-item" onClick={toggleAnswer}>
+          <div className="question">
             <h3 className="question">How do I place an order?</h3>
             <span className="toggle">+</span>
           </div>
@@ -34,8 +38,8 @@ const Faq = () => {
 
         <hr className="divider" />
 
-        <div className="faq-item">
-          <div className="question" onClick={() => toggleAnswer(this)}>
+        <div className="faq-item" onClick={toggleAnswer}>
+          <div className="question">
             <h3 className="question">What payment methods do you accept?</h3>
             <span className="toggle">+</span>
           </div>
@@ -44,8 +48,8 @@ const Faq = () => {
 
         <hr className="divider" />
 
-        <div className="faq-item">
-          <div className="question" onClick={() => toggleAnswer(this)}>
+        <div className="faq-item" onClick={toggleAnswer}>
+          <div className="question">
             <h3 className="question">Can I modify or cancel my order?</h3>
             <span className="toggle">+</span>
           </div>
@@ -54,8 +58,8 @@ const Faq = () => {
 
         <hr className="divider" />
 
-        <div className="faq-item">
-          <div className="question" onClick={() => toggleAnswer(this)}>
+        <div className="faq-item" onClick={toggleAnswer}>
+          <div className="question">
             <h3 className="question">Can I return or exchange my products?</h3>
             <span className="toggle">+</span>
           </div>
@@ -64,8 +68,8 @@ const Faq = () => {
 
         <hr className="divider" />
 
-        <div className="faq-item">
-          <div className="question" onClick={() => toggleAnswer(this)}>
+        <div className="faq-item" onClick={toggleAnswer}>
+          <div className="question">
             <h3 className="question">How do I track my order?</h3>
             <span className="toggle">+</span>
           </div>
@@ -74,8 +78,8 @@ const Faq = () => {
 
         <hr className="divider" />
 
-        <div className="faq-item">
-          <div className="question" onClick={() => toggleAnswer(this)}>
+        <div className="faq-item" onClick={toggleAnswer}>
+          <div className="question">
             <h3 className="question">How can I reach your customer support?</h3>
             <span className="toggle">+</span>
           </div>
