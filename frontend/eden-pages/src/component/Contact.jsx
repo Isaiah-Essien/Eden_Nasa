@@ -1,6 +1,6 @@
-import Form from "./components/Form";
-import Nx from "./components/Nx";
-function App() {
+import Form from "./Form";
+import Nx from "./Nx";
+function Contact() {
   return (
     <>
     <Nx/>
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default Contact;

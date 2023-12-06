@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import cont from ".component/cont";
+import "./cont.css";
 import {FaSearchLocation, FaPhone, FaEnvelope } from "react-icons/fa"
 
 const Form = () => {
@@ -17,6 +17,7 @@ const Form = () => {
     } 
 
     return(
+        <div className="form">
         <form method="post" onSubmit={handleSubmit}>
             <h1>GET IN TOUCH</h1>
             <h2>“Growing Together, Harvesting success”</h2>
@@ -24,12 +25,12 @@ const Form = () => {
                 <div class="adress">
                 <FaSearchLocation className="icon maplocation" beatFade />
                 <h3>ADRESS</h3>
-                <p>Collins Street West Victoria8007 Australia</p>
+                <p>Collins Street West <br/>Victoria8007 Australia</p>
             </div>
             <div class="adress">
             <FaPhone className="icon phone"/>
                 <h3>PHONE</h3>
-                <p>+01 (0) 12 3456 7890
+                <p>+01 (0) 12 3456 7890<br/>
 +01 (0) 12 3456 7891</p>
             </div>
             <div class="adress">
@@ -41,10 +42,12 @@ const Form = () => {
             <div class="bien">
             <input type="text" name="name" id="" onChange={handleChange} value={data.name} placeholder="Enter name" />
             <input type="email" name="email" id="" onChange={handleChange} value={data.email} placeholder="Enter your email" />
-            <input type="phone" name="phone" id="" onChange={handleChange} value={data.phone} placeholder="Enter phone number" /></div>
+            <input type="phone" name="phone" id="" onChange={handleChange} value={data.phone} placeholder="Enter phone number" />
+            </div>
            <textarea name="message" id="" cols="30" rows="2" onChange={handleChange} value={data.message} placeholder="Type here"/>
             <button type="submit">send</button>
         </form>
+        </div>
     )
 }
 

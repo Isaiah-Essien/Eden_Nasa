@@ -1,5 +1,5 @@
 import React from "react";
-import Nx from "./component/cont"
+import "./cont.css"
 
 
 function Display() {
