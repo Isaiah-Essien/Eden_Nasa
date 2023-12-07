@@ -2,16 +2,18 @@
     font-family: 'roboto', Courier, monospace;
 }
 
+
 /* navbar.css */
 body {
     background-color: black;
 }
-.navigation .navbar-brand.logo {
+.navigation .navbar .logo {
     /* Your custom styles for the brand go here */
     color: green; /* Example: Orange text color for the brand */
     font-size: 40px; /* Example: Increase font size for the brand */
     /* Add more styles as needed */
     font-style: italic;
+    text-decoration: none;
   }
 
   .navigation .navbar-brand.logo span {
@@ -24,12 +26,16 @@ body {
   .navigation .nav-link {
     font-size: 18px;
     margin-top: 10px;
-    margin-right: 90px;
+    margin-right: 40px;
+    gap: ;
     color: rgb(0, 0, 0); /* Set the default text color for links */
   }
 
   Navbar {
     color: red;
+  }
+  #menu {
+    margin-top: 13px;
   }
 
  .navigation .login {
@@ -38,7 +44,7 @@ body {
     color: white;
     padding: 0 5px 0 5px;
     width: 100px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-right: 20px;
   }
   .dropmenu .menuitem:hover {
@@ -47,8 +53,7 @@ body {
     margin: 0;
   }
   .navigation {
-    background-color: white;
-    height: 100px;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
   }
 
@@ -71,7 +76,7 @@ body {
     color: white;
     padding: 0 5px 0 5px;
     
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
   .offcanvas-body .login:hover {
