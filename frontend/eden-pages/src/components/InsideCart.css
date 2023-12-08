@@ -1,0 +1,62 @@
+/* InsideCart.css */
+.cart-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.cart-table th {
+  background-color: #f2f2f2;
+}
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  background-color: #3a8e3a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 10px; /* Adjust the font size as needed */
+  padding: 5px; /* Adjust the padding as needed */
+}
+
+/* Additional styles for action button */
+.onebutton:hover {
+  background-color: #f00; /* Adjust the color as needed */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* Additional styles for the button */
+.custom-button {
+  background-color: #3a8e3a;
+  color: white;
+  width: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 75%;
+  bottom: -10%;
+}

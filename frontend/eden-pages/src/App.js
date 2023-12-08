@@ -6,6 +6,7 @@ import FaqPage from "./routes/FaqPage.js";
 import HomePage from "./routes/HomePage.js";
 import MarketPage from "./routes/MarketPage.js";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import InsideCart from "./components/InsideCart.js";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/MarketPage" element={<MarketPage/>} />
         <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/FaqPage" element={<FaqPage />} />
+        <Route path="/InsideCart" element={<InsideCart/>} />
       </Routes>
     </Router>
   );
