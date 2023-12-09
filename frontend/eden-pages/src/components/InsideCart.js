@@ -6,7 +6,7 @@ import "../components/InsideCart.css";
 import productImage from "../assets/Tomatoes.jpg";
 
 const InsideCart = () => {
-  const [quantity, setQuantity] = useState(5); // Initial quantity, adjust as needed
+  const [quantity, setQuantity] = useState(5); 
 
   const handleQuantityChange = (amount) => {
     const newQuantity = Math.max(0, quantity + amount);
@@ -14,7 +14,6 @@ const InsideCart = () => {
   };
 
   const handleRemove = () => {
-    // Implement logic to remove the item from the cart
     console.log("Item removed");
   };
 
@@ -82,7 +81,6 @@ const InsideCart = () => {
           </td>
           <td>Remove</td>
         </tbody>
-        <tfoot>{/* Add footer row as needed */}</tfoot>
       </table>
       <button className="custom-button">Make an Order</button>
     </div>

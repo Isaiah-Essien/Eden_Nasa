@@ -48,15 +48,10 @@
   padding: 5px 10px;
   cursor: pointer;
 }
+
 /* Additional styles for the button */
 .custom-button {
   background-color: #3a8e3a;
+  width: 14%;
   color: white;
-  width: auto;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  position: absolute;
-  left: 75%;
-  bottom: -10%;
 }
