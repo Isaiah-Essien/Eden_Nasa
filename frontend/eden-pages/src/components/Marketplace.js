@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 const Marketplace = () => {
   return (
     <div className='containner'>
@@ -15,6 +16,7 @@ const Marketplace = () => {
         <div className='search_icon'>
         <FontAwesomeIcon className='search' icon={faMagnifyingGlass} />
         </div>
+        <FontAwesomeIcon  className='cart' icon={faCartShopping} />
     </div>
     <div className='filters'>
     <a>Sort by: Best Selling <FontAwesomeIcon style={{ paddingLeft: '10px' }} icon={faChevronDown} /></a>

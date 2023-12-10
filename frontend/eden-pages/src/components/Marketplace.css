@@ -2,7 +2,14 @@
 .containner {
     background-color: white;
 }
-
+.cart {
+    left: 50%;
+    top: 20%;
+    font-size: 25px;
+    color: grey;
+    padding-top: 15px;
+    padding-left: 10px;
+}
 .search {
     font-size: 18px;
     color: white;
