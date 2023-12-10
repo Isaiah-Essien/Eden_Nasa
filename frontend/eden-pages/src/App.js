@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import InsideCartPage from "./routes/InsideCartPage.js";
 import CheckoutPage from "./routes/CheckoutPage.js"
 import LoginPage from "./routes/LoginPage.js";
+import RegPage from "./routes/RegPage.js";
 function App() {
   return (
     <Router>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/Farmers_reg" element={<Farmers_reg/>} />
         <Route path="/FaqPage" element={<FaqPage />} />
+        <Route path="/RegPage" element={<RegPage />} />
         <Route path="/InsideCartPage" element={<InsideCartPage />} />
       </Routes>
     </Router>

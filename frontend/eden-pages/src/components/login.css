@@ -66,6 +66,10 @@
     gap: 5%;
     padding-bottom: 30px;
 }
+.farmerl {
+    text-decoration: none;
+    color: orange;
+}
 .log-info {
    margin-bottom: 20px;
 }
