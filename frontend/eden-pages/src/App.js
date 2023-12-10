@@ -8,9 +8,10 @@ import Farmers_reg from "./components/Farmers_reg.js";
 import MarketPage from "./routes/MarketPage.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import InsideCartPage from "./routes/InsideCartPage.js";
-import CheckoutPage from "./routes/CheckoutPage.js"
+import CheckoutPage from "./routes/CheckoutPage.js";
 import LoginPage from "./routes/LoginPage.js";
 import RegPage from "./routes/RegPage.js";
+import ProductFormPage from "./routes/ProductFormPage.js";
 function App() {
   return (
     <Router>
@@ -20,12 +21,11 @@ function App() {
         <Route path="LoginPage" element={<LoginPage />} />
         <Route path="/CheckoutPage" element={<CheckoutPage />} />
         <Route path="/AboutPage" element={<AboutPage />} />
-        <Route path="/Farmers_reg" element={<Farmers_reg/>} />
+        <Route path="/Farmers_reg" element={<Farmers_reg />} />
         <Route path="/FaqPage" element={<FaqPage />} />
         <Route path="/RegPage" element={<RegPage />} />
         <Route path="/InsideCartPage" element={<InsideCartPage />} />
         <Route path="/ProductFormPage" element={<ProductFormPage />} />
-
       </Routes>
     </Router>
   );
