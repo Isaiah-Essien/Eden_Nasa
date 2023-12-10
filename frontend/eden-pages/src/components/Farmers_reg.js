@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import axios from "axios"
 import "./Farmers_reg.css"
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom"
 
 const FarmersRegistrationForm = () => {
 	// State variables to hold form data and success message
@@ -55,7 +55,9 @@ const FarmersRegistrationForm = () => {
 
 	return (
 		<div className="bob3">
-			<h1 className="bob"><span>Register</span> as a Farmer Today</h1>
+			<h1 className="bob">
+				<span>Register</span> as a Farmer Today
+			</h1>
 			<div className="container">
 				<div className="form-group">
 					<input
@@ -114,15 +116,19 @@ const FarmersRegistrationForm = () => {
 					<div className="alert alert-danger mt-3">{errorMessage}</div>
 				)}
 			</div>
-			<div className='Register'>
-          <p>You already have an account ?</p>
-          {/* Use the Link component for internal links */}
-          <Link to="/LoginPage" className='options'>Log in</Link>
-        </div>
-        <div className='Log2'>
-          <p>You are a regular user ?</p>
-          <Link to="/RegPage" className='farmerl'>Register an account</Link>
-        </div>
+			<div className="Register">
+				<p>You already have an account ?</p>
+				{/* Use the Link component for internal links */}
+				<Link to="/LoginPage" className="options">
+					Log in
+				</Link>
+			</div>
+			<div className="Log2">
+				<p>You are a regular user ?</p>
+				<Link to="/RegPage" className="farmerl">
+					Register an account
+				</Link>
+			</div>
 		</div>
 	)
 }

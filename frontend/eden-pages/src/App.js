@@ -26,7 +26,7 @@ function App() {
 				<Route path="/FaqPage" element={<FaqPage />} />
         <Route path="/RegPage" element={<RegPage />} />
         <Route path="/InsideCartPage" element={<InsideCartPage />} />
-        <Route path="/ProductFormPage" element={<ProductFormPage />} />
+        {/* <Route path="/ProductFormPage" element={<ProductFormPage />} /> */}
 
       </Routes>
     </Router>
