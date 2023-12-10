@@ -14,10 +14,7 @@ function Services() {
         <h2>Services</h2>
         <h3>Eden Solutions Services</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia impedit
-          molestiae eaque sit doloribus? Aut nihil, hic consectetur rerum
-          ratione, necessitatibus autem in quos veritatis rem ipsa obcaecati,
-          eum cum!
+          Eden offers various service 
         </p>
         <a class="btn">Contact Us</a>
       </div>
@@ -32,10 +29,7 @@ function Services() {
       </div>
         <h4>Marketplace</h4>
         <p>
-          Connect with the heart of agriculture in Eden's marketplace. Buy and
-          sell fresh farm produce directly, ensuring fair prices for farmers and
-          reducing food waste. Join us in supporting sustainable agriculture and
-          relish the goodness of locally sourced delights.
+        Welcome to Eden Solutions Services, your gateway to a transformative agricultural experience. At Eden, we focus on providing a unique blend of services tailored to meet the dynamic needs of modern farming. Our platform is your marketplace for exploring innovative solutions without limits.
         </p>
         <a href="#" class="btn">Contact Us</a>
       </div>
