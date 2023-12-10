@@ -49,6 +49,10 @@ function Navibar() {
 												<Link to="/MarketPage" className="nav-link">
 													Marketplace
 												</Link>
+												<Link to="/Farmers_reg" className="nav-link">
+													Resgister as Farmer
+												</Link>
+
 												<NavDropdown
 													title="Ressources"
 													id={`offcanvasNavbarDropdown-expand-${expand}`}

@@ -10,7 +10,7 @@ const Farmers_reg = () => {
 			<FarmersRegistrationForm />
 			<Footer />
 		</div>
-	)
-}
+	);
+};
 
-export default Farmers_reg
+export default Farmers_reg;
