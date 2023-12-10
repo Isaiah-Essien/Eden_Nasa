@@ -90,9 +90,16 @@
     }
     .about-text {
         width: 450px;
+        text-align: center;
     }
     .about-text h1 {
         padding-top: 20px;
+        text-align: center;
+    }
+    .about-text p {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 100%;
     }
 }
 

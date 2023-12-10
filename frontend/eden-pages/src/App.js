@@ -1,26 +1,25 @@
-import React, { useState } from "react";
-import logo from './logo.svg';
-import './App.css';
-import Navibar from './components/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from "./components/Footer";
-import Banner from "./components/Banner.js"
-import About from "./components/About";
-import Services from "./components/Services"
-import Blogs from "./components/Blogs"
+import React from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import AboutPage from "./routes/AboutPage.js";
+import FaqPage from "./routes/FaqPage.js";
+import HomePage from "./routes/HomePage.js";
+import MarketPage from "./routes/MarketPage.js";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import InsideCartPage from "./routes/InsideCartPage.js";
 
 function App() {
   return (
-  <div>
-   <Navibar/>
-   <Banner/>
-   <About/>
-   <Services/>
-   <Blogs/>
-   <Footer/>
-  </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/MarketPage" element={<MarketPage />} />
+        <Route path="/AboutPage" element={<AboutPage />} />
+        <Route path="/FaqPage" element={<FaqPage />} />
+        <Route path="/InsideCartPage" element={<InsideCartPage />} />
+      </Routes>
+    </Router>
   );
 }
-
 
 export default App;
