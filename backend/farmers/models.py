@@ -1,4 +1,5 @@
 from django.db import models
+#some comments
 
 class Farmers(models.Model):
     name = models.CharField(max_length=100)
