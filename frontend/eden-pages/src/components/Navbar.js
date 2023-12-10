@@ -49,9 +49,6 @@ function Navibar() {
 												<Link to="/MarketPage" className="nav-link">
 													Marketplace
 												</Link>
-												<Link to="/Farmers_reg" className="nav-link">
-													Resgister as Farmer
-												</Link>
 
 												<NavDropdown
 													title="Ressources"
@@ -81,9 +78,9 @@ function Navibar() {
 													FAQ
 												</Link>
 											</Nav>
-											<Button variant="link" className="login">
+											<Link to="/LoginPage" variant="link" className="login">
 												Login
-											</Button>
+											</Link>
 										</Offcanvas.Body>
 									</Navbar.Offcanvas>
 								</Container>

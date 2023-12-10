@@ -1,0 +1,93 @@
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Log-tit {
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
+
+.log-info {
+    width: 300px;
+}
+
+.Login {
+    width: 400px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 50px;
+    box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.1);
+}
+.forgot a {
+    color: orange;
+    text-decoration: none;
+    padding-left: 40px;
+}
+.box {
+    margin-bottom: 50px;
+}
+.proceed {
+    margin-top: 5px;
+    padding: 20px;
+    background-color: green;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+ .Login p {
+    text-align: start;
+    padding-left: 50px;
+    margin-bottom: 0px;
+}
+
+.Register {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 5%;
+}
+.options {
+    text-decoration: none;
+    color: orange;
+}
+.Log2 {
+    display: flex;
+    gap: 5%;
+    padding-bottom: 30px;
+}
+.farmerl {
+    text-decoration: none;
+    color: orange;
+}
+.log-info {
+   margin-bottom: 20px;
+}
+.space {
+    text-align: start;
+}
+.checkboxcon {
+    position: relative;
+    padding-left: 50px;
+}
+.checkboxcon input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    padding-bottom: 40px;
+}
+.ct {
+    padding-left: 5px !important;
+}
+.remember {
+
+}
