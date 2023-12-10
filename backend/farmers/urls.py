@@ -8,4 +8,5 @@ urlpatterns = [
     path('farmers/<int:pk>/', views.FarmersDetailView.as_view(), name='farmers-detail'),
     path('farmers/<int:farmer_id>/update/', views.update_farmer, name='update-farmer'),
     path('farmers/<int:farmer_id>/delete/', views.delete_farmer, name='delete-farmer'),
+    path('farmers/farmers/', views.create_farmer, name='create-farmer'),
 ]

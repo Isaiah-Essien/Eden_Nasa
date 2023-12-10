@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AboutPage from "./routes/AboutPage.js";
 import FaqPage from "./routes/FaqPage.js";
 import HomePage from "./routes/HomePage.js";
+import Farmers_reg from "./components/Farmers_reg.js";
 import MarketPage from "./routes/MarketPage.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import InsideCartPage from "./routes/InsideCartPage.js";
@@ -18,6 +19,7 @@ function App() {
         <Route path="LoginPage" element={<LoginPage />} />
         <Route path="/CheckoutPage" element={<CheckoutPage />} />
         <Route path="/AboutPage" element={<AboutPage />} />
+        <Route path="/Farmers_reg" element={<Farmers_reg/>} />
         <Route path="/FaqPage" element={<FaqPage />} />
         <Route path="/InsideCartPage" element={<InsideCartPage />} />
       </Routes>
