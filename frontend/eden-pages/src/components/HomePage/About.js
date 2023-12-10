@@ -1,4 +1,5 @@
 import React from 'react';
+import rice from '../../assets/rice.jpg'
 import "./about.css"
 function About() {
   return (
@@ -7,7 +8,7 @@ function About() {
       <div class="about-content">
       <div class="about-img">
         <img
-          src="/food1.png"
+          src={rice}
           alt="food"
         />
       </div>

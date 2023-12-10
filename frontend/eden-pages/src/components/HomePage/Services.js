@@ -1,6 +1,11 @@
 import "./service.css"
 import video1 from "../../assets/video1.mp4";
-
+import cropcare from '../../assets/cropcare.jpg'
+import insights from '../../assets/insights.jpg'
+import market from '../../assets/marketplace.jpg'
+import farmer from '../../assets/farmer.jpg'
+import forest from '../../assets/forest.jpg'
+import hope from '../../assets/hope.jpg'
 function Services() {
   return (
     <div className="Servs">
@@ -23,7 +28,7 @@ function Services() {
 </video>
       <div class="Service">
         <div class="img-cont">
-        <img src="/food1.png" alt="food" />
+        <img src={market} alt="food" />
       </div>
         <h4>Marketplace</h4>
         <p>
@@ -37,9 +42,9 @@ function Services() {
 
       <div class="Service">
         <div class="img-cont">
-        <img src="/food1.png" alt="food" />
+        <img src={cropcare} alt="food" />
       </div>
-        <h4>Marketplace</h4>
+        <h4>SmartCropCare</h4>
         <p>
           Connect with the heart of agriculture in Eden's marketplace. Buy and
           sell fresh farm produce directly, ensuring fair prices for farmers and
@@ -50,9 +55,9 @@ function Services() {
       </div>
       <div class="Service">
         <div class="img-cont">
-        <img src="/food1.png" alt="food" />
+        <img src={insights} alt="food" />
       </div>
-        <h4>Marketplace</h4>
+        <h4>Market Insights</h4>
         <p>
           Connect with the heart of agriculture in Eden's marketplace. Buy and
           sell fresh farm produce directly, ensuring fair prices for farmers and

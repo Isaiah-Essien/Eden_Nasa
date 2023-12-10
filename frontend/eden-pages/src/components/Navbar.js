@@ -20,7 +20,7 @@ function Navibar() {
 								className="bg-body-tertiary mb-3"
 							>
 								<Container fluid>
-									<Link to="/HomePage" className="logo">
+									<Link to="/" className="logo">
 										<span>E</span>DEN
 									</Link>
 									<Navbar.Toggle
@@ -46,22 +46,9 @@ function Navibar() {
 												<Link to="/AboutPage" className="nav-link">
 													About
 												</Link>
-												<NavDropdown
-													title="Marketplace"
-													id={`offcanvasNavbarDropdown-marketplace-${expand}`}
-													className="dropmenu"
-												>
-													<Link to="/MarketPage" className="menuitem">
-														Marketplace
-													</Link>
-													<NavDropdown.Divider />
-													<NavDropdown.Item
-														to="/Farmers_reg"
-														className="menuitem"
-													>
-														Farmers Registration
-													</NavDropdown.Item>
-												</NavDropdown>
+												<Link to="/MarketPage" className="nav-link">
+													Marketplace
+												</Link>
 												<NavDropdown
 													title="Ressources"
 													id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -105,4 +92,4 @@ function Navibar() {
 	)
 }
 
-export default Navibar
+export default Navibar;
