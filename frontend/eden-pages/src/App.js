@@ -5,13 +5,15 @@ import AboutPage from "./routes/AboutPage.js";
 import FaqPage from "./routes/FaqPage.js";
 import HomePage from "./routes/HomePage.js";
 import MarketPage from "./routes/MarketPage.js";
+import CheckoutPage from "./routes/CheckoutPage.js";
+import CartPage from "./routes/CartPage.js"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
       <Routes>
-      <Route path="/" element={<HomePage/>} />
+      <Route path="/" element={<CartPage/>} />
         <Route path="/MarketPage" element={<MarketPage/>} />
         <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/FaqPage" element={<FaqPage />} />
