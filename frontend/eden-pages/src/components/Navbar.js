@@ -73,7 +73,7 @@ function Navibar() {
 														Market Insights
 													</NavDropdown.Item>
 												</NavDropdown>
-												<Nav.Link href="#action2">Contact Us</Nav.Link>
+												<link to='/ContactPage'>Contact Us</link>
 												<Link to="/FaqPage" className="nav-link">
 													FAQ
 												</Link>

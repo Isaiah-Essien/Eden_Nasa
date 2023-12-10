@@ -6,9 +6,9 @@ import FarmersRegistrationForm from "../components/Farmers_reg"
 const Farmers_reg = () => {
 	return (
 		<div>
-			<Navibar />
-			<FarmersRegistrationForm />
-			<Footer />
+			<Navibar/>
+			<FarmersRegistrationForm/>
+			<Footer/>
 		</div>
 	)
 }
