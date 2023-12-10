@@ -7,13 +7,14 @@ import HomePage from "./routes/HomePage.js";
 import MarketPage from "./routes/MarketPage.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import InsideCartPage from "./routes/InsideCartPage.js";
-
+import CheckoutPage from "./routes/CheckoutPage.js"
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/MarketPage" element={<MarketPage />} />
+        <Route path="/CheckoutPage" element={<CheckoutPage />} />
         <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/FaqPage" element={<FaqPage />} />
         <Route path="/InsideCartPage" element={<InsideCartPage />} />

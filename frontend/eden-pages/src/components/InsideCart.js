@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import "../components/InsideCart.css";
 import productImage from "../assets/Tomatoes.jpg";
+import { Link } from 'react-router-dom';
 
 const InsideCart = () => {
   const [quantity, setQuantity] = useState(5); 
@@ -82,7 +83,7 @@ const InsideCart = () => {
           <td>Remove</td>
         </tbody>
       </table>
-      <button className="custom-button">Make an Order</button>
+      <Link to ="/CheckoutPage" className='btn'>Make an order</Link>
     </div>
   );
 };
