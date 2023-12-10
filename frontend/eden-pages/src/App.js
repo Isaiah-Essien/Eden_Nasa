@@ -11,12 +11,14 @@ import InsideCartPage from "./routes/InsideCartPage.js";
 import CheckoutPage from "./routes/CheckoutPage.js"
 import LoginPage from "./routes/LoginPage.js";
 import RegPage from "./routes/RegPage.js";
+import ContactPage from "./routes/ContactPage.js";
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/MarketPage" element={<MarketPage />} />
+        <Route path="/ContactPage" element={<ContactPage />} />
         <Route path="LoginPage" element={<LoginPage />} />
         <Route path="/CheckoutPage" element={<CheckoutPage />} />
         <Route path="/AboutPage" element={<AboutPage />} />
