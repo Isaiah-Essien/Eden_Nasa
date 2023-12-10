@@ -15,7 +15,7 @@ function Navibar() {
             expand === 'lg' ? (
               <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
                 <Container fluid>
-                  <Link to ="/HomePage" className='logo'><span>E</span>DEN</Link>
+                  <Link to ="/" className='logo'><span>E</span>DEN</Link>
                   <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                   <Navbar.Offcanvas
                     id={`offcanvasNavbar-expand-${expand}`}

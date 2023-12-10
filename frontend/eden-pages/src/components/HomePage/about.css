@@ -68,6 +68,11 @@
     font-weight: bold;
     margin-left: 0;
 }
+.btn:hover {
+    background-color: orange !important;
+    transition: .2s ease-in;
+    color: white;
+}
 
 @media (max-width: 1025px) {
     .about-text h1 {
