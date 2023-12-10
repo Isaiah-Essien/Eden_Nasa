@@ -49,13 +49,12 @@ const FarmersRegistrationForm = () => {
 			}, 5000)
 		} catch (error) {
 			console.error("Error registering farmer:", error)
-			// Optionally, you can set an error state or display an error message to the user
 		}
 	}
 
 	return (
 		<div className="bob3">
-			<h1 className="bob"><span className="bob1">Register</span> as a Farmer Today</h1>
+			<h1 className="bob"><span>Register</span> as a Farmer Today</h1>
 			<div className="container">
 				<div className="form-group">
 					<input
