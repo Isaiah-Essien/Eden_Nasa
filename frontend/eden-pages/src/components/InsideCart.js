@@ -52,7 +52,7 @@ const InsideCart = () => {
                   className="quantity-button"
                   onClick={() => handleQuantityChange(1)}
                 >
-                  <FontAwesomeIcon icon={faPlus} />
+                  <FontAwesomeIcon  icon={faPlus} />
                 </button>
               </div>
             </td>

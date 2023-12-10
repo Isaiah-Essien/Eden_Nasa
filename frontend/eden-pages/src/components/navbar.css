@@ -2,7 +2,12 @@
     font-family: 'roboto', Courier, monospace;
 }
 
-
+.login {
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 /* navbar.css */
 body {
     background-color: black;
@@ -38,7 +43,7 @@ body {
     margin-top: 13px;
   }
 
- .navigation .login {
+  .login {
     text-decoration: none;
     background-color: green;
     color: white;
@@ -46,10 +51,11 @@ body {
     width: 100px;
     margin-top: 10px;
     margin-right: 20px;
+    padding-top: 12px !important;
   }
   .dropmenu .menuitem:hover {
     color: orange;
-    background-color: white;
+    background-color: rgb(22, 17, 17);
     margin: 0;
   }
   .navigation {

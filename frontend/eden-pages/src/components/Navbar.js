@@ -44,7 +44,7 @@ function Navibar() {
                         <Nav.Link href="#action2">Contact Us</Nav.Link>
                         <Link to="/FaqPage" className="nav-link">FAQ</Link>
                       </Nav>
-                        <Button variant="link" className='login'>Login</Button>
+                        <Link to="/LoginPage" variant="link" className='login'>Login</Link>
                     </Offcanvas.Body>
                   </Navbar.Offcanvas>
                 </Container>
