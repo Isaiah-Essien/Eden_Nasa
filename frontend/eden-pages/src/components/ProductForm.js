@@ -1,112 +1,136 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 import axios from "axios";
 import "../components/ProductForm.css";
 
-const ProductForm = () => {
-  const [title, setTitle] = useState("");
-  const [price, setPrice] = useState("");
-  const [file, setFile] = useState(null);
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+class ProductForm extends Component {
+  state = {
+    title: "",
+    price: "",
+    file: null,
+    details: [],
+    errorMessage: "",
+  };
+  componentDidMount() {
+    this.fetchProducts();
+  }
 
-  const ProductsList = async () => {
+  handleFileChange = (e) => {
+    const selectedFile = e.target.files[0];
+    this.setState({ file: selectedFile });
+  };
+
+  addProduct = async (e) => {
+    e.preventDefault();
+
     try {
-      // Check if required fields are filled
+      const { title, price, file } = this.state;
+
       if (!title || !price || !file) {
-        setErrorMessage("All fields are required.");
+        this.setState({ errorMessage: "All fields are required." });
         return;
       }
 
-      let formfield = new FormData();
-      formfield.append("title", title);
-      formfield.append("price", price);
-      formfield.append("image", file);
+      const formData = new FormData();
+      formData.append("title", title);
+      formData.append("price", price);
+      formData.append("image", file);
 
-      // Obtain CSRF token from a cookie
-      const csrfToken = document.cookie
-        .split(";")
-        .find((cookie) => cookie.trim().startsWith("csrftoken="))
-        .split("=")[1];
+      await axios.post("http://127.0.0.1:8000/product/create/list/", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
 
-      // Append CSRF token to the form data
-      formfield.append("csrfmiddlewaretoken", csrfToken);
+      console.log("ProductForm.js", this.state)
 
-      const response = await axios.post(
-        "http://127.0.0.1:8000/product/create&list/",
-        formfield,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
-      );
+      this.setState({
+        errorMessage: "",
+        title: "",
+        price: "",
+        file: null,
+      });
 
-      console.log(response.data);
-
-      // Set success message and clear form fields
-      setSuccessMessage("Your product has been added successfully");
-      setTitle("");
-      setPrice("");
-      setFile(null);
-
-      setTimeout(() => {
-        setSuccessMessage("");
-      }, 5000);
+      this.fetchProducts();
     } catch (error) {
-      console.error("Error while creating a product:", error);
+      console.error("Error while adding a product:", error);
+      this.setState({
+        errorMessage: "Error adding product. Please try again.",
+      });
     }
   };
 
-  const handleFileChange = (e) => {
-    const selectedFile = e.target.files[0];
-    setFile(selectedFile);
+  fetchProducts = async () => {
+    try {
+      const response = await axios.get("http://127.0.0.1:8000/product/create/list/");
+      this.setState({ details: response.data });
+    } catch (error) {
+      console.error("Error while fetching products:", error);
+    }
   };
 
-  return (
-    <div className="product-form">
-      <form>
-        {/* Existing form fields */}
-        <div>
-          <span>Title:</span>
-          <input
-            type="text"
-            id="title"
-            name="title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
+  render() {
+    const { title, price, file, details, errorMessage } = this.state;
+
+    return (
+      <div>
+        {/* Product Form */}
+        <div className="product-form">
+          <form onSubmit={this.addProduct}>
+            <div>
+              <span>Title:</span>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                value={title}
+                onChange={(e) => this.setState({ title: e.target.value })}
+              />
+            </div>
+            <div>
+              <span>Price:</span>
+              <input
+                type="number"
+                id="price"
+                name="price"
+                value={price}
+                onChange={(e) => this.setState({ price: e.target.value })}
+              />
+            </div>
+            <div>
+              <span>Image:</span>
+              <input
+                type="file"
+                id="image"
+                name="image"
+                onChange={this.handleFileChange}
+              />
+            </div>
+            <button type="submit" className="btn btn-success">
+              Add Product
+            </button>
+            {errorMessage && (
+              <div className="alert alert-danger mt-3">{errorMessage}</div>
+            )}
+          </form>
         </div>
+
+        {/* All Registered Products */}
         <div>
-          <span>Price:</span>
-          <input
-            type="number"
-            id="price"
-            name="price"
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-          />
+          <header>All Registered Products: </header>
+          <hr />
+          {details.map((output, id) => (
+            <div key={id}>
+              <div>
+                <h3>{output.title}</h3>
+                <h4>{output.price}</h4>
+                <img src={output.image} alt="product" />
+              </div>
+            </div>
+          ))}
         </div>
-        <div>
-          <span>Image:</span>
-          <input
-            type="file"
-            id="image"
-            name="image"
-            onChange={handleFileChange}
-          />
-        </div>
-        <button className="btn btn-success" onClick={ProductsList}>
-          Add Product
-        </button>
-        {successMessage && (
-          <div className="alert alert-success mt-3">{successMessage}</div>
-        )}
-        {errorMessage && (
-          <div className="alert alert-danger mt-3">{errorMessage}</div>
-        )}
-      </form>
-    </div>
-  );
-};
+      </div>
+    );
+  }
+}
 
 export default ProductForm;
