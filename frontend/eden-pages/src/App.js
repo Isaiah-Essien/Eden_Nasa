@@ -12,8 +12,13 @@ import CheckoutPage from "./routes/CheckoutPage.js";
 import LoginPage from "./routes/LoginPage.js";
 import RegPage from "./routes/RegPage.js";
 import ProductFormPage from "./routes/ProductFormPage.js";
+<<<<<<< HEAD
 import FarmReg from "./routes/FarmReg.js";
 import Contact from "./routes/ContactPage.js";
+=======
+import Contact from "./routes/ContactPage.jsx";
+import FarmReg from "./routes/FarmReg.js"
+>>>>>>> origin/main
 
 function App() {
   return (

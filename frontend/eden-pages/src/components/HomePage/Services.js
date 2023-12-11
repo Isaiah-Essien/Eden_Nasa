@@ -34,40 +34,36 @@ function Services() {
         <a href="#" class="btn">Contact Us</a>
       </div>
 
-          <div class="Service">
-            <div class="img-cont">
-              <img src={cropcare} alt="food" />
-            </div>
-            <h4>SmartCropCare</h4>
-            <p>
-              Connect with the heart of agriculture in Eden's marketplace. Buy
-              and sell fresh farm produce directly, ensuring fair prices for
-              farmers and reducing food waste. Join us in supporting sustainable
-              agriculture and relish the goodness of locally sourced delights.
-            </p>
-            <a href="#" class="btn">
-              Contact Us
-            </a>
-          </div>
-          <div class="Service">
-            <div class="img-cont">
-              <img src={insights} alt="food" />
-            </div>
-            <h4>Market Insights</h4>
-            <p>
-              Connect with the heart of agriculture in Eden's marketplace. Buy
-              and sell fresh farm produce directly, ensuring fair prices for
-              farmers and reducing food waste. Join us in supporting sustainable
-              agriculture and relish the goodness of locally sourced delights.
-            </p>
-            <a href="#" class="btn">
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </section>
+      <div class="Service">
+        <div class="img-cont">
+        <img src={cropcare} alt="food" />
+      </div>
+        <h4>SmartCropCare</h4>
+        <p>
+          Connect with the heart of agriculture in Eden's marketplace. Buy and
+          sell fresh farm produce directly, ensuring fair prices for farmers and
+          reducing food waste. Join us in supporting sustainable agriculture and
+          relish the goodness of locally sourced delights.
+        </p>
+        <a href="#" class="btn">Contact Us</a>
+      </div>
+      <div class="Service">
+        <div class="img-cont">
+        <img src={insights} alt="food" />
+      </div>
+        <h4>Market Insights</h4>
+        <p>
+          Connect with the heart of agriculture in Eden's marketplace. Buy and
+          sell fresh farm produce directly, ensuring fair prices for farmers and
+          reducing food waste. Join us in supporting sustainable agriculture and
+          relish the goodness of locally sourced delights.
+        </p>
+        <a href="#" class="btn">Contact Us</a>
+      </div>
+    </div>
+    </section>
     </div>
   );
 }
 
-export default Services;
+export default Services
