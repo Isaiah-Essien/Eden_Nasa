@@ -12,13 +12,8 @@ import CheckoutPage from "./routes/CheckoutPage.js";
 import LoginPage from "./routes/LoginPage.js";
 import RegPage from "./routes/RegPage.js";
 import ProductFormPage from "./routes/ProductFormPage.js";
-<<<<<<< HEAD
-import FarmReg from "./routes/FarmReg.js";
 import Contact from "./routes/ContactPage.js";
-=======
-import Contact from "./routes/ContactPage.jsx";
 import FarmReg from "./routes/FarmReg.js"
->>>>>>> origin/main
 
 function App() {
   return (
@@ -29,7 +24,6 @@ function App() {
         <Route path="LoginPage" element={<LoginPage />} />
         <Route path="/CheckoutPage" element={<CheckoutPage />} />
         <Route path="/AboutPage" element={<AboutPage />} />
-        <Route path="/Farmers_reg" element={<Farmers_reg />} />
         <Route path="/FaqPage" element={<FaqPage />} />
         <Route path="/RegPage" element={<RegPage />} />
         <Route path="/InsideCartPage" element={<InsideCartPage />} />
