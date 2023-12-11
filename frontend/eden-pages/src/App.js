@@ -11,6 +11,7 @@ import InsideCartPage from "./routes/InsideCartPage.js"
 import CheckoutPage from "./routes/CheckoutPage.js"
 import LoginPage from "./routes/LoginPage.js";
 import RegPage from "./routes/RegPage.js";
+import Contact from "./routes/ContactPage.jsx"
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
 				<Route path="/AboutPage" element={<AboutPage />} />
 				<Route path="/FarmReg" element={<FarmReg />} />
 				<Route path="/FaqPage" element={<FaqPage />} />
+        <Route path="/ContactPage" element={<Contact />} />
         <Route path="/RegPage" element={<RegPage />} />
         <Route path="/InsideCartPage" element={<InsideCartPage />} />
         {/* <Route path="/ProductFormPage" element={<ProductFormPage />} /> */}

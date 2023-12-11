@@ -77,7 +77,7 @@ function Navibar() {
 												<Link to="/FaqPage" className="nav-link">
 													FAQ
 												</Link>
-												<Link to="/" className="nav-link">
+												<Link to="/ContactPage" className="nav-link">
 														Contact Us
 													</Link>
 											</Nav>
