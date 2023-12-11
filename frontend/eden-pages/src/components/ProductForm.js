@@ -41,7 +41,7 @@ class ProductForm extends Component {
         },
       });
 
-      console.log("ProductForm.js", this.state)
+      console.log("ProductForm.js", this.state);
 
       this.setState({
         errorMessage: "",
@@ -61,7 +61,9 @@ class ProductForm extends Component {
 
   fetchProducts = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/product/create/list/");
+      const response = await axios.get(
+        "http://127.0.0.1:8000/product/create/list/"
+      );
       this.setState({ details: response.data });
     } catch (error) {
       console.error("Error while fetching products:", error);
@@ -76,6 +78,7 @@ class ProductForm extends Component {
         {/* Product Form */}
         <div className="product-form">
           <form onSubmit={this.addProduct}>
+            <h1>Publish The product</h1>
             <div>
               <span>Title:</span>
               <input
@@ -112,21 +115,6 @@ class ProductForm extends Component {
               <div className="alert alert-danger mt-3">{errorMessage}</div>
             )}
           </form>
-        </div>
-
-        {/* All Registered Products */}
-        <div>
-          <header>All Registered Products: </header>
-          <hr />
-          {details.map((output, id) => (
-            <div key={id}>
-              <div>
-                <h3>{output.title}</h3>
-                <h4>{output.price}</h4>
-                <img src={output.image} alt="product" />
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     );

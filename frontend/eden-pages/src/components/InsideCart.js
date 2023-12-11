@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import "../components/InsideCart.css";
 import productImage from "../assets/Tomatoes.jpg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const InsideCart = () => {
-  const [quantity, setQuantity] = useState(5); 
+  const [quantity, setQuantity] = useState(5);
 
   const handleQuantityChange = (amount) => {
     const newQuantity = Math.max(0, quantity + amount);
@@ -52,7 +52,7 @@ const InsideCart = () => {
                   className="quantity-button"
                   onClick={() => handleQuantityChange(1)}
                 >
-                  <FontAwesomeIcon  icon={faPlus} />
+                  <FontAwesomeIcon icon={faPlus} />
                 </button>
               </div>
             </td>
@@ -83,7 +83,9 @@ const InsideCart = () => {
           <td>Remove</td>
         </tbody>
       </table>
-      <Link to ="/CheckoutPage" className='btn'>Make an order</Link>
+      <Link to="/CheckoutPage" className="btn">
+        Make an order
+      </Link>
     </div>
   );
 };
