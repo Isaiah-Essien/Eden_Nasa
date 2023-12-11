@@ -24,7 +24,7 @@ const FarmersRegistrationForm = () => {
 			}
 
 			// Validate phone number format
-			const phoneRegex = /^\+?[0-9]*$/;
+			const phoneRegex = /^\+?1?\d{9,15}$/;
 			if (!phoneRegex.test(phoneNumber)) {
 				setErrorMessage(
 					"Invalid phone number. Please enter only numeric characters."

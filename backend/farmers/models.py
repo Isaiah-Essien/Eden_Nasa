@@ -6,7 +6,7 @@ class Farmers(models.Model):
     
     # Validator to ensure only numeric characters are entered
     phone_number_validator = RegexValidator(
-        regex=r'^\d+$',
+        regex=r'^\+?1?\d{9,15}$',
         message='Phone number must contain only numeric characters.',
         code='invalid_phone_number'
     )
