@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AboutPage from "./routes/AboutPage.js";
 import FaqPage from "./routes/FaqPage.js";
 import HomePage from "./routes/HomePage.js";
-import Farmers_reg from "./components/Farmers_reg.js";
 import MarketPage from "./routes/MarketPage.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import InsideCartPage from "./routes/InsideCartPage.js";
