@@ -23,6 +23,50 @@ const FarmersRegistrationForm = () => {
 				return
 			}
 
+			// Validate phone number format
+			const phoneRegex = /^\+?[0-9]*$/;
+			if (!phoneRegex.test(phoneNumber)) {
+				setErrorMessage(
+					"Invalid phone number. Please enter only numeric characters."
+				)
+				setTimeout(() => {
+					setErrorMessage("")
+				}, 2000)
+				return
+			}
+
+			// Additional validation for char fields (e.g., limiting the length)
+			const maxNameLength = 100
+			if (name.length > maxNameLength) {
+				setErrorMessage(`Name should not exceed ${maxNameLength} characters.`)
+				setTimeout(() => {
+					setErrorMessage("")
+				}, 2000)
+				return
+			}
+
+			const maxLocationLength = 100
+			if (location.length > maxLocationLength) {
+				setErrorMessage(
+					`Location should not exceed ${maxLocationLength} characters.`
+				)
+				setTimeout(() => {
+					setErrorMessage("")
+				}, 2000)
+				return
+			}
+
+			const maxProductLength = 100
+			if (product.length > maxProductLength) {
+				setErrorMessage(
+					`Product should not exceed ${maxProductLength} characters.`
+				)
+				setTimeout(() => {
+					setErrorMessage("")
+				}, 2000)
+				return
+			}
+
 			let formfield = new FormData()
 			formfield.append("name", name)
 			formfield.append("phoneNumber", phoneNumber)
