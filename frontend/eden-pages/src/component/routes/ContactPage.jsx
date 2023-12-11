@@ -1,5 +1,5 @@
-import Form from "./Form";
-import Nx from "./Nx";
+import Form from "../../components/Form";
+import Nx from "../../components/Nx";
 function Contact() {
   return (
     <>
