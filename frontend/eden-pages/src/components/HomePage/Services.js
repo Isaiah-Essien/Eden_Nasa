@@ -9,41 +9,6 @@ import hope from "../../assets/hope.jpg";
 function Services() {
   return (
     <div className="Servs">
-<<<<<<< HEAD
-      <section>
-        <div class="Service1">
-          <h2>Services</h2>
-          <h3>Eden Solutions Services</h3>
-          <p>
-            Eden's integrated agricultural platform offers a marketplace
-            connecting farmers and consumers, cutting-edge SmartCropCare
-            technology for optimized crop management, Market Insights for
-            informed decision-making, and comprehensive Eden Solutions Services,
-            fostering sustainable agriculture and reducing food waste!
-          </p>
-          <a class="btn">Contact Us</a>
-        </div>
-        <div class="Services">
-          <video autoPlay muted loop>
-            <source src={video1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div class="Service">
-            <div class="img-cont">
-              <img src={market} alt="food" />
-            </div>
-            <h4>Marketplace</h4>
-            <p>
-              Connect with the heart of agriculture in Eden's marketplace. Buy
-              and sell fresh farm produce directly, ensuring fair prices for
-              farmers and reducing food waste. Join us in supporting sustainable
-              agriculture and relish the goodness of locally sourced delights.
-            </p>
-            <a href="#" class="btn">
-              Contact Us
-            </a>
-          </div>
-=======
      <section>
      <div class="Service1">
         <h2>Services</h2>
@@ -68,7 +33,6 @@ function Services() {
         </p>
         <a href="#" class="btn">Contact Us</a>
       </div>
->>>>>>> origin/main
 
           <div class="Service">
             <div class="img-cont">

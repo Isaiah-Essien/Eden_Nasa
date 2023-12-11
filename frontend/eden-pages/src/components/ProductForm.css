@@ -1,3 +1,4 @@
+/* Updated CSS for Product Form */
 .product-form form {
   max-width: 400px;
   margin: 20px auto;
@@ -11,6 +12,7 @@
   display: block;
   margin-bottom: 15px;
 }
+
 .product-form span {
   font-weight: bold;
   display: block;
@@ -38,4 +40,48 @@
 
 .product-form button:hover {
   background-color: #3a8e3a;
+}
+
+/* Added CSS for All Registered Products */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: calc(33.33% - 20px); /* 3 products in a row, with some spacing */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.add-to-cart-button {
+  background-color: #3a8e3a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #267326; /* Darker green on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px); /* 2 products in a row for smaller screens */
+  }
 }
