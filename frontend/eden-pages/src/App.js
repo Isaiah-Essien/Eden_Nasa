@@ -12,6 +12,8 @@ import CheckoutPage from "./routes/CheckoutPage.js";
 import LoginPage from "./routes/LoginPage.js";
 import RegPage from "./routes/RegPage.js";
 import ProductFormPage from "./routes/ProductFormPage.js";
+import Contact from "./routes/ContactPage.jsx";
+import FarmReg from "./routes/FarmReg.js"
 
 function App() {
   return (
