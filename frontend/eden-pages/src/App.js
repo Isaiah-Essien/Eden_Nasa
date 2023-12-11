@@ -12,6 +12,7 @@ import CheckoutPage from "./routes/CheckoutPage.js";
 import LoginPage from "./routes/LoginPage.js";
 import RegPage from "./routes/RegPage.js";
 import ProductFormPage from "./routes/ProductFormPage.js";
+
 function App() {
   return (
     <Router>
@@ -26,6 +27,8 @@ function App() {
         <Route path="/RegPage" element={<RegPage />} />
         <Route path="/InsideCartPage" element={<InsideCartPage />} />
         <Route path="/ProductFormPage" element={<ProductFormPage />} />
+        <Route path="/FarmReg" element={<FarmReg />} />
+        <Route path="/ContactPage" element={<Contact />} />
       </Routes>
     </Router>
   );

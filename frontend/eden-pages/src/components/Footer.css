@@ -5,11 +5,13 @@ body {
     font-family: 'roboto', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
 footer {
     background-color: #3a6338;
     color: white;
     padding: 30px;
     height: 100%;
+    z-index: 0;
     margin-top:20px
 }
 
