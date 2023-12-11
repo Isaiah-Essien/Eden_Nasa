@@ -55,9 +55,9 @@ function Navibar() {
 													id={`offcanvasNavbarDropdown-expand-${expand}`}
 													className="dropmenu"
 												>
-													<Link to="/" className="menuitem">
+													<NavDropdown.Item to="/" className="menuitem">
 														Blog
-													</Link>
+													</NavDropdown.Item>
 													<NavDropdown.Divider />
 													<NavDropdown.Item
 														href="#action4"
@@ -77,6 +77,9 @@ function Navibar() {
 												<Link to="/FaqPage" className="nav-link">
 													FAQ
 												</Link>
+												<Link to="/" className="nav-link">
+														Contact Us
+													</Link>
 											</Nav>
 											<Link to="/LoginPage" variant="link" className="login">
 												Login
