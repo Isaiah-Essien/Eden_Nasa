@@ -6,7 +6,7 @@ function Display() {
     return (
         <div class="va">
             <img src="./src/components/img/Rectang 96.png" alt="" />
-            <h4>Contact <span>Us</span></h4>
+            <h4 className="ctit">Contact <span>Us</span></h4>
         </div>
     )
 }

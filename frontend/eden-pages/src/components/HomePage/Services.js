@@ -29,7 +29,7 @@ function Services() {
       </div>
         <h4>Marketplace</h4>
         <p>
-        Welcome to Eden Solutions Services, your gateway to a transformative agricultural experience. At Eden, we focus on providing a unique blend of services tailored to meet the dynamic needs of modern farming. Our platform is your marketplace for exploring innovative solutions without limits.
+        Welcome to Eden Solutions Services, your gateway to a transformative shopping experience. At Eden, we focus on providing a unique blend of services tailored to meet the needs of modern farming. Our platform is your marketplace for exploring innovative solutions without limits.
         </p>
         <a href="#" class="btn">Contact Us</a>
       </div>

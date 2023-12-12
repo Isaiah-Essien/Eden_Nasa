@@ -31,7 +31,7 @@ body {
   .navigation .nav-link {
     font-size: 18px;
     margin-top: 10px;
-    margin-right: 40px;
+    margin-right: 20px;
     /* gap: ; */
     color: rgb(0, 0, 0); /* Set the default text color for links */
   }
@@ -116,13 +116,19 @@ body {
       color: white;
     }
   
-    .offcanvas-body > .login {
+    .login {
       text-decoration: none;
       background-color: green;
       color: white;
-      padding: 5px;
-      width: 100%;
-      margin-top: 5px;
+      padding: 15px !important;
+      padding-left: 100px !important;
+      padding-right: 100px !important;
+      margin-top: 100px !important;
+      text-align: center;
+      margin-left: 65px !important;
+    }
+    .nav-link:last-child {
+      margin-bottom: 15px;
     }
   
     .offcanvas-body .login:hover {

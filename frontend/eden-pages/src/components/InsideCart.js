@@ -83,7 +83,7 @@ const InsideCart = () => {
           <td>Remove</td>
         </tbody>
       </table>
-      <Link to="/CheckoutPage" className="btn">
+      <Link to="/CheckoutPage" className="buttn">
         Make an order
       </Link>
     </div>

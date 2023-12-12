@@ -66,18 +66,7 @@
   padding: 10px;
 }
 
-.add-to-cart-button {
-  background-color: #3a8e3a;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-.add-to-cart-button:hover {
-  background-color: #267326; /* Darker green on hover */
-}
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
