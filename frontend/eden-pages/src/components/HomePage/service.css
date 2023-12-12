@@ -40,6 +40,7 @@
 video {
     width: 100%;
 }
+
 .Service {
     display: flex;
     flex-direction: column; /* Change to column layout */
@@ -53,6 +54,8 @@ video {
     cursor: pointer;
     transition: transform .8s;
     padding-bottom: 20px;
+    text-align: center !important;
+    justify-content: center !important;
 }
 .Service1 h3 {
     font-size: 25px;
@@ -60,6 +63,7 @@ video {
 .Service h4 {
     text-align: center;
     margin: 0px;
+    color: gray !important;
 }
 
 .img-cont {

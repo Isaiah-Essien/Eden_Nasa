@@ -25,7 +25,7 @@ const Login = () => {
 						<a href="">Forgot your password ?</a>
 					</div>
 				</div>
-				<button className="proceed">Login</button>
+				<a className="proceed">Login</a>
 				<div className="Register">
 					<p>Don't you have an account ?</p>
 					<Link to="/RegPage" className="options">

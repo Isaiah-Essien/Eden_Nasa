@@ -42,7 +42,11 @@ function Navibar() {
                         className="justify-content-end flex-grow-1 pe-3"
                         id="menu"
                       >
-                        <Link to="/AboutPage" className="nav-link">
+                      <Link to="/" className="nav-link">
+                          Home
+                        </Link>
+              
+                      <Link to="/AboutPage" className="nav-link">
                           About
                         </Link>
 
