@@ -1,94 +1,56 @@
-.cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bob3 {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(57, 55, 55, 0.1);
 }
 
-.Log-tit {
-    font-weight: bold;
-    color: green;
-    text-align: center;
+.form-group {
+	margin-bottom: 15px;
 }
 
-.log-info {
-    width: 300px;
+.form-control {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
 
-.Login {
-    width: 400px;
-    background-color: white;
-    align-items: center;
-    justify-content: center !important;
-    margin: 10px;
-    text-align: center;
-    height: auto;
-    border-radius: 10px;
-    padding-top: 50px;
-    box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.1);
-}
-.forgot a {
-    color: orange;
-    text-decoration: none;
-    padding-left: 40px;
-}
-.box {
-    margin-bottom: 50px;
-}
-.proceed {
-    margin-top: 5px;
-    padding: 20px;
-    background-color: green;
-    padding-left: 80px;
-    padding-right: 80px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-}
- .Login p {
-    text-align: start;
-    padding-left: 50px;
-    margin-bottom: 0px;
+.green-button {
+	background-color: #4caf50;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
 }
 
-.Register {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    display: flex;
-    gap: 5%;
+.success-message {
+	margin-top: 15px;
+	color: #4caf50;
 }
-.options {
-    text-decoration: none;
-    color: orange;
-}
-.Log2 {
-    display: flex;
-    gap: 5%;
-    padding-bottom: 30px;
-}
-.farmerl {
-    text-decoration: none;
-    color: orange;
-}
-.log-info {
-   margin-bottom: 20px;
-}
-.space {
-    text-align: start;
-}
-.checkboxcon {
-    position: relative;
-    padding-left: 50px;
-}
-.checkboxcon input[type="checkbox"] {
-    width: 15px;
-    height: 15px;
-    padding-bottom: 40px;
-}
-.ct {
-    padding-left: 5px !important;
-}
-.remember {
 
+.error-message {
+	margin-top: 15px;
+	color: #ff0000;
+}
+.bob {
+	color: green;
+	text-align: center;
+	font-weight: bold;
+}
+
+.form-group input{
+	font-size: 14px;
+}
+.form-group input::placeholder {
+	font-size: 12px;
+	color: #888;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
