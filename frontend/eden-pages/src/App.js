@@ -12,7 +12,7 @@ import LoginPage from "./routes/LoginPage.js";
 import RegPage from "./routes/RegPage.js";
 import ProductFormPage from "./routes/ProductFormPage.js";
 import Contact from "./routes/ContactPage.js";
-import FarmReg from "./routes/FarmReg.js"
+import FarmReg from "./routes/FarmReg.js";
 
 function App() {
   return (

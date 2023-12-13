@@ -102,6 +102,46 @@ const Marketplace = () => {
                 icon={faChevronRight}
               />
             </a>
+            <a href="#">
+              Fruits (3){" "}
+              <FontAwesomeIcon
+                className="categs"
+                style={{ paddingLeft: "7px" }}
+                icon={faChevronRight}
+              />
+            </a>
+            <a href="#">
+              Vegetables (3){" "}
+              <FontAwesomeIcon
+                className="categs"
+                style={{ paddingLeft: "7px" }}
+                icon={faChevronRight}
+              />
+            </a>
+            <a href="#">
+              All categories{" "}
+              <FontAwesomeIcon
+                className="categs"
+                style={{ paddingLeft: "7px" }}
+                icon={faChevronRight}
+              />
+            </a>
+            <a href="#">
+              Meat (1){" "}
+              <FontAwesomeIcon
+                className="categs"
+                style={{ paddingLeft: "7px" }}
+                icon={faChevronRight}
+              />
+            </a>
+            <a href="#">
+              Dairy products (2){" "}
+              <FontAwesomeIcon
+                className="categs"
+                style={{ paddingLeft: "7px" }}
+                icon={faChevronRight}
+              />
+            </a>
           </div>
         </div>
         <div className="product-list">
