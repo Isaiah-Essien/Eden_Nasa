@@ -6,9 +6,13 @@ Smallholder farmers globally face challenges such as limited market access, low 
 ## Backend
 ### Prerequisites
 Python 3. x
+
 Node.js and npm
+
 Create a virtual environment: python -m venv venv
+
 Activate the Virtual Environment
+
 .\venv\Scripts\activate (Note this will depend on the device you're using, On macOS/Linux: source venv/bin/activate
 )
 ### Install Django and Other Dependencies:
