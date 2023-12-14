@@ -67,29 +67,7 @@ const Marketplace = () => {
           </div>
         </Link>
       </div>
-      <div className="filters">
-        <a>
-          Sort by: Best Selling{" "}
-          <FontAwesomeIcon
-            style={{ paddingLeft: "10px" }}
-            icon={faChevronDown}
-          />
-        </a>
-        <a>
-          Price range{" "}
-          <FontAwesomeIcon
-            style={{ paddingLeft: "10px" }}
-            icon={faChevronDown}
-          />
-        </a>
-        <a>
-          filters{" "}
-          <FontAwesomeIcon
-            style={{ paddingLeft: "10px" }}
-            icon={faChevronDown}
-          />
-        </a>
-      </div>
+
       <div className="marketplace">
         <div className="cats">
           <h1>Categories</h1>

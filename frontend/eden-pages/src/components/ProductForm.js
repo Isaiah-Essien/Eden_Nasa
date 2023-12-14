@@ -9,7 +9,9 @@ class ProductForm extends Component {
     file: null,
     details: [],
     errorMessage: "",
+    successMessage: "", // New state for success message
   };
+
   componentDidMount() {
     this.fetchProducts();
   }
@@ -35,16 +37,20 @@ class ProductForm extends Component {
       formData.append("price", price);
       formData.append("image", file);
 
-      await axios.post("http://127.0.0.1:8000/product/create/list/", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
-
-      console.log("ProductForm.js", this.state);
+      const response = await axios.post(
+        "http://127.0.0.1:8000/product/create/list/",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      console.log(response);
 
       this.setState({
         errorMessage: "",
+        successMessage: "Product added successfully!", // Update success message
         title: "",
         price: "",
         file: null,
@@ -55,6 +61,7 @@ class ProductForm extends Component {
       console.error("Error while adding a product:", error);
       this.setState({
         errorMessage: "Error adding product. Please try again.",
+        successMessage: "", // Reset success message in case of an error
       });
     }
   };
@@ -71,7 +78,8 @@ class ProductForm extends Component {
   };
 
   render() {
-    const { title, price, file, details, errorMessage } = this.state;
+    const { title, price, file, details, errorMessage, successMessage } =
+      this.state;
 
     return (
       <div>
@@ -113,6 +121,9 @@ class ProductForm extends Component {
             </button>
             {errorMessage && (
               <div className="alert alert-danger mt-3">{errorMessage}</div>
+            )}
+            {successMessage && (
+              <div className="alert alert-success mt-3">{successMessage}</div>
             )}
           </form>
         </div>

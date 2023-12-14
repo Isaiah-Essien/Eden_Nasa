@@ -70,10 +70,10 @@
 }
 
 .cats {
-  width: 100%;
+  width: 20%;
   list-style: none;
   margin-left: 30px;
-  margin-right: 160px;
+  margin-right: 100px;
   line-height: 1rem;
   box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.1);
   height: 100%;
@@ -113,7 +113,7 @@
 }
 .market {
   display: flex;
-  width: 90%;
+  width: 1500%;
   gap: 30px;
   flex-wrap: wrap;
   align-items: center;

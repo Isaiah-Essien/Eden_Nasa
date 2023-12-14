@@ -11,17 +11,17 @@ from .serializers import ProductSerializer
 class ProductListCreateView(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
 class ProductDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     lookup_field = 'pk'  
 
 
 @api_view(['PUT'])
-@permission_classes([permissions.IsAuthenticated])
+# @permission_classes([permissions.IsAuthenticated])
 def update_product(request, product_id):
     try:
         product = Product.objects.get(pk=product_id)
@@ -34,7 +34,7 @@ def update_product(request, product_id):
         return Response({'message': 'Product not found'}, status=status.HTTP_404_NOT_FOUND)
 
 @api_view(['DELETE'])
-@permission_classes([permissions.IsAuthenticated])
+# @permission_classes([permissions.IsAuthenticated])
 def delete_product(request, product_id):
     try:
         product = Product.objects.get(pk=product_id)

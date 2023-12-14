@@ -8,7 +8,7 @@ const MarketPage = () => {
   return (
     <div>
       <Navibar />
-      <Marketplace />
+      <Marketplace/>
       <Blogs />
       <Footer />
     </div>
