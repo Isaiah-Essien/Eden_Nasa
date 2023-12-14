@@ -1,4 +1,4 @@
-![Screenshot from 2023-12-14 17-23-21](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/0233ab39-406b-42e9-a1cf-f6f057287ba4)# Eden – Empowering Smallholder Farmers through Digital Agriculture
+# Empowering Smallholder Farmers through Digital Agriculture
 
 ## Project Description:
 Smallholder farmers globally face challenges such as limited market access, low income, and insufficient resources for optimal crop management. Eden addresses these issues by introducing a digital marketplace that connects farmers directly with consumers, promoting fair trade practices and sustainable agriculture.
@@ -189,6 +189,7 @@ We have connected our API endpoint to the fronted for the app to have a life.
 
 ### screenshoots
 ![Screenshot from 2023-12-14 17-24-34](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/93f2d4c0-704d-4f87-a543-146dead6155d)
+![Screenshot from 2023-12-14 17-25-46](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/8042a9ac-9725-46a2-a921-e8226221429a)
 
 ![Screenshot from 2023-12-14 15-47-36](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/ecd8c3b1-732d-4e52-8055-86b7eaef707f)
 ![Screenshot from 2023-12-14 15-47-55](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/e80b8d2b-2d3d-4054-913e-51862a1f8dd3)
