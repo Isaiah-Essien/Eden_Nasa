@@ -6,6 +6,7 @@ import market from "../../assets/marketplace.jpg";
 import farmer from "../../assets/farmer.jpg";
 import forest from "../../assets/forest.jpg";
 import hope from "../../assets/hope.jpg";
+import { Link } from "react-router-dom";
 function Services() {
   return (
     <div className="Servs">
@@ -16,7 +17,7 @@ function Services() {
         <p>
           Eden offers various service 
         </p>
-        <a class="btn">Contact Us</a>
+        <Link to='/ContactPage' class="btn">Contact Us</Link>
       </div>
       <div class="Services">
       <video autoPlay muted loop>
@@ -31,7 +32,6 @@ function Services() {
         <p>
         Welcome to Eden Solutions Services, your gateway to a transformative shopping experience. At Eden, we focus on providing a unique blend of services tailored to meet the needs of modern farming. Our platform is your marketplace for exploring innovative solutions without limits.
         </p>
-        <a href="#" class="btn">Contact Us</a>
       </div>
 
       <div class="Service">
@@ -45,7 +45,6 @@ function Services() {
           reducing food waste. Join us in supporting sustainable agriculture and
           relish the goodness of locally sourced delights.
         </p>
-        <a href="#" class="btn">Contact Us</a>
       </div>
       <div class="Service">
         <div class="img-cont">
@@ -58,7 +57,6 @@ function Services() {
           reducing food waste. Join us in supporting sustainable agriculture and
           relish the goodness of locally sourced delights.
         </p>
-        <a href="#" class="btn">Contact Us</a>
       </div>
     </div>
     </section>

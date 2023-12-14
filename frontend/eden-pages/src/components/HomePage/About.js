@@ -1,6 +1,7 @@
 import React from 'react';
 import rice from '../../assets/rice.jpg'
 import "./about.css"
+import { Link } from "react-router-dom";
 function About() {
   return (
     <div className="About">
@@ -24,7 +25,7 @@ function About() {
           practices and empowering communities, Eden is a beacon of positive
           change in the agri-tech landscape.
         </p>
-        <a href="#" class="btn">Read more</a>
+        <Link to="/AboutPage" class="btn">Read more</Link>
       </div>
     </div>
     </section>
