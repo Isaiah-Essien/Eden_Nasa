@@ -1,4 +1,4 @@
-# Eden – Empowering Smallholder Farmers through Digital Agriculture
+![Screenshot from 2023-12-14 17-23-21](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/0233ab39-406b-42e9-a1cf-f6f057287ba4)# Eden – Empowering Smallholder Farmers through Digital Agriculture
 
 ## Project Description:
 Smallholder farmers globally face challenges such as limited market access, low income, and insufficient resources for optimal crop management. Eden addresses these issues by introducing a digital marketplace that connects farmers directly with consumers, promoting fair trade practices and sustainable agriculture.
@@ -112,6 +112,8 @@ After you install all dependencies, you will be able to access the Django endpoi
 From here you can interact with different endpoints by adding the endpoint routes to the browser.
 
 ### Example 
+![Screenshot from 2023-12-14 17-23-21](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/82904474-25b7-40a1-ad77-03bc346f2786)
+
 ![Screenshot from 2023-12-14 17-18-40](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/dcae731e-e6cb-4912-a3c6-906c560c29e4)
 
 
@@ -125,7 +127,7 @@ cd frontend
 
 cd eden-pages
 
-##### install rewired dependencies by running npm install
+##### Install rewired dependencies by running npm install
 
 ##### and run the application by command: npm run start
 
@@ -186,6 +188,8 @@ Product list:  http://127.0.0.1:8000/famer/list
 We have connected our API endpoint to the fronted for the app to have a life. 
 
 ### screenshoots
+![Screenshot from 2023-12-14 17-24-34](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/93f2d4c0-704d-4f87-a543-146dead6155d)
+
 ![Screenshot from 2023-12-14 15-47-36](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/ecd8c3b1-732d-4e52-8055-86b7eaef707f)
 ![Screenshot from 2023-12-14 15-47-55](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/e80b8d2b-2d3d-4054-913e-51862a1f8dd3)
 ![Screenshot from 2023-12-14 15-48-26](https://github.com/Isaiah-Essien/Eden_Nasa/assets/79199207/a3f7991f-adde-4e94-9d7e-044709c269b2)
