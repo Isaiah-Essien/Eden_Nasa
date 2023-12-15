@@ -207,6 +207,8 @@ a/assets/79199207/ac896c17-4f98-4e82-9eb1-4649399fd79b)
 [Conceptual design Document- Team NASA_Eden
 ](https://docs.google.com/document/d/12l1VykdkdKpIGzazneN4A8kAS3eYT78zzlc6hJzG4Jw/edit#heading=h.xeimghfs9srl)https://docs.google.com/document/d/12l1VykdkdKpIGzazneN4A8kAS3eYT78zzlc6hJzG4Jw/edit#heading=h.xeimghfs9srl
 
+## Link to video explaining some concepts of the app- (https://www.loom.com/share/887f40ac2d384dd3ae49c43bf542f4a4?sid=5c367c1a-e9bb-47e9-a5b5-9b90f8a5bde5)
+
 
 
 
