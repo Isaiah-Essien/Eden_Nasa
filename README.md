@@ -1,7 +1,8 @@
 # Empowering Smallholder Farmers through Digital Agriculture
 
 ## Project Description:
-Smallholder farmers globally face challenges such as limited market access, low income, and insufficient resources for optimal crop management. Eden addresses these issues by introducing a digital marketplace that connects farmers directly with consumers, promoting fair trade practices and sustainable agriculture.
+Smallholder farmers globally face challenges such as, low crop yield, low income, and insufficient resources for optimal crop management. The project includes the development of a comprehensive website offering real-world practical applications of agricultural practices tailored to each location. It covers sustainable techniques, farmers forum, and facilitates connections between buyers and sellers.
+
 ## Installation Process
 ## Backend
 ### Prerequisites
@@ -203,11 +204,8 @@ a/assets/79199207/ac896c17-4f98-4e82-9eb1-4649399fd79b)
 
 ### Additional Documentation
 
-[Revised WORK Proposal_TEAM NASA](https://docs.google.com/document/d/14awVArsnLxLCLDtbUrCJu0RsygbR8Fbw1dzcGUHgciI/edit)https://docs.google.com/document/d/14awVArsnLxLCLDtbUrCJu0RsygbR8Fbw1dzcGUHgciI/edit
-[Conceptual design Document- Team NASA_Eden
-](https://docs.google.com/document/d/12l1VykdkdKpIGzazneN4A8kAS3eYT78zzlc6hJzG4Jw/edit#heading=h.xeimghfs9srl)https://docs.google.com/document/d/12l1VykdkdKpIGzazneN4A8kAS3eYT78zzlc6hJzG4Jw/edit#heading=h.xeimghfs9srl
 
-## Link to video explaining some concepts of the app- (https://www.loom.com/share/887f40ac2d384dd3ae49c43bf542f4a4?sid=5c367c1a-e9bb-47e9-a5b5-9b90f8a5bde5)
+## Link to video explaining some concepts of the app- (https://www.loom.com/share/2722d58c723443378792822c54629848?src=composer)
 
 
 
